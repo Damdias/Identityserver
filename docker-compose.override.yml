@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  webappidentityserver:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  aspnetcore.auth.web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+

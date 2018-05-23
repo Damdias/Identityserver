@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  webappidentityserver:
+    image: webappidentityserver
+    build:
+      context: .
+      dockerfile: WebAppIdentityServer/Dockerfile
+
+  aspnetcore.auth.web:
+    image: aspnetcoreauthweb
+    build:
+      context: .
+      dockerfile: AspNetCore.Auth.Web/Dockerfile
+

@@ -1,0 +1,52 @@
+﻿<div class="starter-template">
+    <h1>Welcome @User.Identity.Name</h1>
+    <p class="lead">Here are your claims</p>
+    <ul>
+        @foreach(var claim in User.Claims)
+        {
+            <li>
+                <em>@claim.Type</em>: @claim.Value
+            </li>
+
+        }
+    </ul>
+    <button disabled class="btn" id="callApibn">Call Api</button>
+</div>
+<script src="~/js/oidc-client.min.js"></script>
+<script>
+    var user;
+    var config = {
+        authority: 'https://localhost:44398',
+        client_id: 'AuthWeb_Javascript',
+        response_type: 'id_token token',
+        scope: 'openid WebApi',
+        slient_redirect_uri:'https://localhost:44386/SilentSignInCallback.html'
+
+    }
+    var btn = document.getElementById("callApibn");
+    btn.onclick = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/api/user");
+        xhr.setRequestHeader("Authorization", "Bearer " + user.access_token);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                var apiuser = JSON.parse(xhr.responseText);
+                alert("Called the API as ther user: " + apiuser.userName);
+
+            }
+            else {
+                alert("Something went wrong! Status code : " + xhr.status);
+
+            }
+
+        }
+        xhr.send();
+    }
+    var mgr = new oidc.UserManager(config);
+    mgr.signingSilient().then(function (x) {
+        user = x;
+        btn.disabled = false;
+        btn.className = "btn primary";
+
+    })
+</script>

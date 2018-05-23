@@ -1,0 +1,5 @@
+/obj
+/bin
+/AspNetCore.Auth.Web/bin
+/AspNetCore.Auth.Web/obj
+/.vs

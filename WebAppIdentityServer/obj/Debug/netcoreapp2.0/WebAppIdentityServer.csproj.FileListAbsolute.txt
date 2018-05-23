@@ -1,0 +1,11 @@
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\bin\Debug\netcoreapp2.0\WebAppIdentityServer.deps.json
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\bin\Debug\netcoreapp2.0\WebAppIdentityServer.runtimeconfig.json
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\bin\Debug\netcoreapp2.0\WebAppIdentityServer.runtimeconfig.dev.json
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\bin\Debug\netcoreapp2.0\WebAppIdentityServer.dll
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.csproj.CoreCompileInputs.cache
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.AssemblyInfoInputs.cache
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.AssemblyInfo.cs
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\bin\Debug\netcoreapp2.0\WebAppIdentityServer.pdb
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.dll
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.pdb
+D:\Projects\asp.net core\WebAppIdentityServer\WebAppIdentityServer\obj\Debug\netcoreapp2.0\WebAppIdentityServer.csprojResolveAssemblyReference.cache
